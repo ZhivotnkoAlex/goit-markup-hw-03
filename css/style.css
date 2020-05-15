@@ -130,11 +130,23 @@
     background-color: var(--button-background);
 }
 
+.hiden {
+    display: none;
+}
+
+.values>li {
+    width: 278px;
+    margin-right: 30px;
+    margin-top: 94px;
+}
+
 .values p {
     color: var(--secondary-color);
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 0;
+    margin-top: 10;
 }
 
 .values h3 {
@@ -142,6 +154,18 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.values:last-child {
+    margin-right: 0;
 }
 
 .specialization h2 {
@@ -149,6 +173,20 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 94px;
+    margin-bottom: 0;
+}
+
+.specialization>ul {
+    margin-top: 50px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialization>li {
+    margin-top: 50px;
+    width: 380px;
 }
 
 .specialization p {
@@ -166,6 +204,7 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin: 0;
 }
 
 .team p {
@@ -173,6 +212,8 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .team h4 {
@@ -180,6 +221,16 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.team-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .clients {
@@ -187,14 +238,26 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 188px;
 }
 
 .footer {
     background-color: var(--footer-background-color);
 }
 
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top;
+}
+
 .footer-contacts a {
     text-decoration: none;
+}
+
+.footer-contacts p {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-logo {
@@ -202,7 +265,7 @@
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.9;
+    /* line-height: 1.9; */
 }
 
 .footer-address {
@@ -232,16 +295,30 @@
     text-transform: uppercase;
 }
 
+.footer-submit>ul {
+    display: flex;
+    margin: 0;
+}
+
+.footer-submit li {
+    display: flex;
+    justify-content: baseline;
+}
+
 .footer-input-descr {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
+    /*   */
+    /* align-items: center; */
 }
 
 .footer-input {
     background-color: var(--footer-background-color);
+}
+
+.footer button {
+    margin-top: 0;
 }
 
 .copyright {
