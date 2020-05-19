@@ -142,6 +142,8 @@
 
 .values-cont {
     padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .values>li {
@@ -263,8 +265,12 @@
 }
 
 .clients {
-    margin-top: 188px;
-    margin-bottom: 50px;
+    padding-top: 188px;
+    padding-bottom: 50px;
+}
+
+.clients>ul {
+    margin: 0;
 }
 
 .clients>h2 {
