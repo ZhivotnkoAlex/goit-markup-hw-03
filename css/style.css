@@ -25,7 +25,7 @@
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -37,23 +37,27 @@
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header a {
     text-decoration: none;
 }
 
-.header nav a {
+.header-contacts {
     color: var(--main-color);
 }
 
 .header-nav {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .header-flex {
-    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,8 +76,9 @@
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.9;
+    /* line-height: 1.9; */
     text-decoration: none;
+    margin-right: 85px;
 }
 
 .logo-color {
@@ -81,7 +86,7 @@
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.9;
+    /* line-height: 1.9; */
 }
 
 .site-nav-accent a:hover,
@@ -100,6 +105,17 @@
 
 .header-link:first-child {
     margin-right: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .hero {
@@ -136,11 +152,7 @@
     border-radius: 4px;
 }
 
-.hiden {
-    display: none;
-}
-
-.values-cont {
+.values-section .container {
     padding-top: 94px;
     padding-bottom: 94px;
     border-bottom: 1px solid #ECECEC;
@@ -182,6 +194,7 @@
 
 .specialization {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .specialization h2 {
@@ -193,7 +206,7 @@
     margin-top: 0;
 }
 
-.specialization>ul {
+.specialization ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -201,8 +214,12 @@
     justify-content: space-between;
 }
 
-.specialization>li {
-    width: 380px;
+.specialization li {
+    width: calc((100% - 60px) / 3);
+}
+
+.specialization-img {
+    display: block;
 }
 
 .specialization p {
@@ -223,9 +240,21 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--secondary-background-color);
 }
 
-.team h2 {
+.team-card {
+    width: calc((100% - 90px) / 4);
+    background-color: var(--main-background-color);
+    padding-bottom: 24px;
+    border-radius: 4px;
+}
+
+.team-img {
+    display: block;
+}
+
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -234,16 +263,17 @@
     margin-bottom: 50px;
 }
 
-.team p {
+.team-profession {
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+    /* padding-bottom: 16px; */
 }
 
-.team h4 {
+.team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -265,15 +295,15 @@
 }
 
 .clients {
-    padding-top: 188px;
-    padding-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.clients>ul {
+.clients ul {
     margin: 0;
 }
 
-.clients>h2 {
+.clients h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -415,6 +445,7 @@
 .portfolio-filter {
     display: flex;
     padding-left: 0;
+    padding-bottom: 50px;
     margin: 0;
     justify-content: center;
 }
@@ -443,15 +474,16 @@
 }
 
 .portfolio-projects p {
-    margin: 0px 24px 0 24px;
+    margin: 0;
+    padding: 0 24px 20px 24px;
     color: var(--secondary-color);
-    padding-left: 0;
     font-size: 16px;
     line-height: 1.87;
 }
 
 .portfolio-projects h2 {
-    margin: 20px 24px 4px 24px;
+    padding: 0 24px 4px 24px;
+    margin: 0;
     line-height: 2;
     letter-spacing: 0.06em;
     font-size: 18px;
@@ -461,8 +493,9 @@
     display: flex;
     padding-left: 0;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .portfolio-projects>li {
@@ -471,7 +504,6 @@
     border: 1px solid #eeeeee;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding-bottom: 20px;
 }
 
 .portfolio-projects>li:nth-child(3n) {
